@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form with Captcha</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+<div class="login-form">
+    <div class="form-title">
+        Login
+    </div>
+    <div class="form-input">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="enter your name">
+    </div>
+    <div class="form-input">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="enter your password">
+    </div>
+    <!-- Include input field for hobby -->
+    <div class="form-input">
+        <label for="hobby">Hobby</label>
+        <input type="text" id="hobby" placeholder="enter your hobby">
+    </div>
+    <!-- End of hobby input field -->
+    <div class="captcha">
+        <label for="captcha-input">Enter Captcha</label>
+        <div class="preview"></div>
+        <div class="captcha-form">
+            <input type="text" id="captcha-form" placeholder="Enter captcha text">
+            <button class="captcha-refresh">
+                <i class="fa fa-refresh"></i>
+            </button>
+        </div>
+    </div>
+    <div class="form-input">
+        <button id="login-btn">Login</button>
+        <a href="registration.html">Forgot Password</a>
+    </div>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
