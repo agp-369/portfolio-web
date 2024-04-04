@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Online Examination system</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.webp">
+        </div>
+        <div class="title">
+            <h1>BBAU SATELLITE CAMPUS AMETHI</h1>
+            <p>Online Academic Examination Management System</p>
+        </div>
+        <div class="list">
+            <ul class="nav">
+                <li><a href="my_home.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="b1.html">Logout</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="https://www.youth4work.com/onlinetalenttest">Skill</a> </li>
+
+            
+            </ul>
+        </div>
+    </nav>
+    <marquee scrollamount="20" bgcolor="yellow" direction="right" height="20px" width="100%" behavior="alternate">BBAU SATELLITE CAMPUS AMETHI</marquee>
+    <form action="online_exam.html" method="post"></form>
+    <div class="main">
+
+        <h1>Administration Login</h1>
+
+        Username<br><br>
+
+        <input type="text" id="username" placeholder="eg:I,II,..Sem" required><br><br>
+        <span class="error" id="error-batch"></span>
+        Subject<br><br>
+
+        <input type="text" id="subject" placeholder="Subject Name" required><br><br>
+        <span class="error" id="error-subject"></span>
+        password<br><br>
+
+        <input type="password" id="password" placeholder="enter your password" required><br><br>
+        <span class="error" id="error-password"></span>
+        <button onclick="validateForm()">Login</button><br><br>
+
+        <a href="#">Forgot Password</a>
+
+    </div>
+</form>
+    <div class="footer">
+        <div class="t2">
+            <h2>BBAU Satellite Campus</h2>
+            <p>Tikarmaphi, Amethi<br>UP-227405</p>
+        </div>
+        <div class="contact">
+            <p>Phone: 8572889968<br>Email: agpmarkagroup@gmail.com<br>Web: agpmarkagroup.com</p>
+        </div>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/yourpage"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/yourpage"><img src="Twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/yourpage"><img src="Instagram.jpg" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@BBAUCollections/yourpage"><img src="youtube.png" alt="Instagram"></a>
+            <!-- Add more social media icons and links as needed -->
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value.trim();
+            var subject = document.getElementById("subject").value.trim();
+            var password = document.getElementById("password").value.trim();
+
+            if (username === "") {
+                alert("Please enter Batch");
+                return false;
+            }
+
+            if (subject === "") {
+                alert("Please enter Subject");
+                return false;
+            }
+
+            if (password === "") {
+                alert("Please enter Password");
+                return false;
+            }
+
+            // Perform authentication (replace with your actual authentication logic)
+            if (username === "admin" && subject === "bca" && password === "admin123") {
+                window.location.href = "admin.html"; // Redirect to admin dashboard page
+            } else {
+                alert("Invalid credentials");
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
