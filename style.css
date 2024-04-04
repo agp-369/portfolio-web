@@ -225,3 +225,23 @@ body {
   .nav a:hover {
     color: #555;
   }
+.container {
+    width: 100%;
+    max-width: 1200px; /* optional: limit maximum width for larger screens */
+    margin: 0 auto; /* center the container */
+}
+
+/* Small devices (phones, 768px and below) */
+@media only screen and (max-width: 768px) {
+    /* CSS rules for small screens */
+}
+
+/* Medium devices (tablets, 768px and above) */
+@media only screen and (min-width: 768px) {
+    /* CSS rules for medium screens */
+}
+
+/* Large devices (desktops, 992px and above) */
+@media only screen and (min-width: 992px) {
+    /* CSS rules for large screens */
+}
